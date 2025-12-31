@@ -2,6 +2,7 @@
 
 snapraid_install: true
 snapraid_runner: true
+snapraid_runner_repo: "https://github.com/Chronial/snapraid-runner.git"
 
 snapraid_apt_package_name: snapraid
 snapraid_bin_path: /usr/local/bin/snapraid
@@ -20,6 +21,11 @@ snapraid_runner_email_subject: "[SnapRAID] Status Report:"
 snapraid_runner_smtp_host: smtp.gmail.com
 snapraid_runner_smtp_port: 465
 snapraid_runner_use_ssl: true
+
+snapraid_runner_pushover_token: ""
+snapraid_runner_pushover_user: ""
+snapraid_runner_pushover_sendon: "error,success"
+snapraid_runner_pushover_maxsize: 1024
 
 snapraid_content_files:
   - /var/snapraid.content
